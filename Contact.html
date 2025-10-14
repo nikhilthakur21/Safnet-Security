@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            background: linear-gradient(135deg, #ecf2fe, #ecf2fe, #d9e2f7c5);
+            background-image: url(/Assets/bg11.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* Navbar big */
+        .Navbar {
+            width: 100vw;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            img {
+                margin-top: 20px;
+                height: 60px;
+                width: auto;
+            }
+
+            h1 {
+
+                color: rgba(31, 62, 218, 0.897);
+                font-family: "Merienda", cursive;
+            }
+
+            h6 {
+                flex-basis: 100%;
+                margin-top: -24px;
+                margin-left: 60px;
+                background: linear-gradient(160deg, #476397, #ff00a2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: sans-serif;
+            }
+
+        }
+
+
+        /* navbar mini */
+
+        #mininav {
+
+            width: 100vw;
+            height: 50px;
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #mini-nav {
+
+            width: 650px;
+            height: 50px;
+            border: 1px solid rgba(0, 98, 255, 0.671);
+            border-radius: 10px;
+            background-color: rgb(0, 0, 0);
+            margin-top: -80px;
+            position: fixed;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                font-family: sans-serif;
+                padding: 4px;
+            }
+
+            a:hover {
+
+                background: linear-gradient(70deg, #234c97, #ff00a2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                   border: 1px solid rgba(255, 255, 255, 0.248);
+                border-radius: 5px;
+            }
+
+        }
+
+        /* ........................................................................... */
+
+        #con {
+            width: 700px;
+            height: 450px;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+            border: 6px solid rgb(177, 189, 206);
+            border-radius: 25px;
+
+            margin-bottom: 10px;
+            margin-left: 288px;
+            margin-top: -30px;
+
+            font-family: Verdana;
+
+            display: flex;
+            flex-flow: column nowrap;
+            flex-direction: column;
+
+
+            h1 {
+                background-color: rgba(177, 189, 206, 0.203);
+                color: rgb(29, 32, 32);
+            }
+
+            input {
+
+                width: 350px;
+                height: 20px;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+
+            select {
+                width: 350px;
+                height: 20px;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+
+            #msg {
+                width: 350px;
+                height: 60px;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+
+            button {
+
+                width: 150px;
+                height: 50px;
+                margin-top: 10px;
+                background: linear-gradient(rgb(255, 255, 255), rgb(110, 110, 254), rgb(139, 13, 87));
+                border: 2px solid rgb(177, 189, 206);
+                border-radius: 50px;
+                margin-left: 20px;
+                color: white;
+                font-size: larger;
+
+            }
+
+            button:hover {
+
+                background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0), rgb(0, 92, 128));
+                border: 2px solid white;
+
+
+            }
+
+            p {
+                margin-left: 20px;
+            }
+        }
+
+        /* ........................................................................... */
+
+         .lastfoot {
+            width: 100%;
+            height: 120px;
+            /* border-top: 1px solid white; */
+            border-top: 5px solid;
+            /* thickness */
+            border-image: linear-gradient(to right, pink, blue, purple) 1;
+            background: rgba(0, 0, 0, 0.701);
+            color: white;
+            text-align: center;
+            clear: both;
+            display: flex;
+            flex-flow: row;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: sans-serif;
+
+
+            ul {
+                list-style-type: none;
+
+            }
+
+
+            h3 {
+                color: rgba(31, 62, 218, 0.897);
+                 background: linear-gradient(70deg, #234c97, #ff00a2);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: "Merienda", cursive;
+            }
+
+
+
+
+        }
+
+        .lfoot {
+            height: 100px;
+            width: 250px;
+            /* border: 2px solid blueviolet; */
+            margin-left: 30px;
+            padding-top: 0px;
+            padding-bottom: 20px;
+
+            img {
+                height: 50px;
+                width: 50px;
+                padding-top: 35px;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+                /* these property is used for zoom in and out function scale 0-1 desfine inside outside zoom */
+            }
+
+            p:hover {
+                border: 1px solid rgba(52, 37, 181, 0.486);
+
+            }
+
+            h4:hover {
+                border: 1px solid rgba(52, 37, 181, 0.486);
+
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                border: 1px solid rgba(52, 37, 181, 0.486);
+                padding-left: 20px;
+                padding-right: 20px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="Navbar">
+            <img src="/Assets/logo.png" alt="logo of Web Page">
+
+            <h1>SAFENET SECURITY</h1>
+            <h6>Securing Data, Empowering Business.</h6>
+        </div>
+
+    </nav>
+
+    <nav id="mininav">
+        <div id="mini-nav">
+            <a href="/Landing.html">Home</a>
+            <a href="/About.html">About Us</a>
+            <a href="/Services.html">Services</a>
+            <a href="/Solutions.html">Solutions</a>
+            <a href="/Contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- /* ........................................................................... */ -->
+
+    <div id="con">
+
+        <form action="">
+            <h1><b>Contact Us</b></h1>
+
+            <input type="text" placeholder="Full Name">
+            <input type="number" placeholder="Phone Number">
+            <input type="email" placeholder="Mail ID">
+
+            <p>Types of services you need-</p>
+
+            <select>
+                <option value="Web app pentesting">Web app pentesting</option>
+                <option value="External Network Pentesting">External Network Pentesting</option>
+                <option value="Mobile app pentesting">Mobile app pentesting</option>
+                <option value="IoT Pentesting">IoT Pentesting</option>
+                <option value="API pentesting">API pentesting</option>
+                <option value="Cloud security assessment">Cloud security assessment</option>
+            </select>
+
+            <textarea id="msg" placeholder="Message"></textarea>
+            <div>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- /* ........................................................................... */ -->
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <footer>
+
+        <div class="lastfoot">
+
+            <ul>
+                <li>
+                    <h3>SAFENET SECURITY</h3>
+                </li>
+                <li>
+                    <p> &#169; 2024-2025 . All rights reserved.</p>
+                </li>
+            </ul>
+
+
+            <div class="lfoot">
+
+                <h4>Get In Touch</h4>
+                <p>+91 9284548505</p>
+                <a href="mailto:nikhthakur21@gmail.com">nikhthakur21@gmail.com</a>
+
+
+            </div>
+            <div class="lfoot">
+                <h4>150+ Trusted Clients</h4>
+                <p>21+ Countries Served</p>
+                <p>4+ Years in Business</p>
+            </div>
+            <div class="lfoot">
+                <a href="https://www.instagram.com/nikhil_thakur_patil/?hl=en"><img src="/Assets/insta.webp" alt=""></a>
+                <a href="https://www.facebook.com/p/Nikhil-Thakur-Patil-100027762152719/"><img src="/Assets/fb.png"
+                        alt=""></a>
+                <a href="www.linkdin.com/in/nikhil-thakur-919528b7"><img src="/Assets/in.png" alt=""></a>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

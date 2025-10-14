@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=S, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: linear-gradient(135deg, #ecf2fe, #ecf2fe, #d9e2f7c5);
+        background-image: url(/Assets/bg11.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Navbar big */
+      .Navbar {
+        width: 100vw;
+        height: 100px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        img {
+          margin-top: 20px;
+          height: 60px;
+          width: auto;
+        }
+
+        h1 {
+          color: rgba(31, 62, 218, 0.897);
+          font-family: "Merienda", cursive;
+        }
+
+        h6 {
+          flex-basis: 100%;
+          margin-top: -24px;
+          margin-left: 60px;
+          background: linear-gradient(160deg, #476397, #ff00a2);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: sans-serif;
+        }
+      }
+
+      /* navbar mini */
+
+      #mininav {
+        width: 100vw;
+        height: 50px;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #mini-nav {
+        width: 650px;
+        height: 50px;
+        border: 1px solid rgba(0, 98, 255, 0.671);
+        border-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        margin-top: -80px;
+        position: fixed;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: sans-serif;
+          padding: 4px;
+        }
+
+        a:hover {
+          background: linear-gradient(70deg, #234c97, #ff00a2);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          border: 1px solid rgba(255, 255, 255, 0.248);
+          border-radius: 5px;
+        }
+      }
+
+      /* /////////////////////////////////////main part//////////////////////////////////////////////////////////// */
+
+      #sec {
+        width: 1000px;
+        height: 800px;
+        /* border: 2px solid rgb(255, 0, 0); */
+        margin-top: -30px;
+        margin-left: 150px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row;
+        padding: 10px;
+      }
+
+      #sec1 {
+        width: 350px;
+        height: 100%;
+        border: 2px solid rgb(255, 255, 255);
+        border-top-left-radius: 50px;
+        margin-left: 35px;
+        background: linear-gradient(to right, #4169e1, #da70d6);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        text-align: justify;
+      }
+
+      .sec11 {
+        height: 160px;
+        width: 270px;
+        /* border: 2px solid rgba(248, 248, 248, 0.396); */
+        border-radius: 10px;
+        background-color: rgba(248, 248, 248, 0.307);
+        color: rgba(0, 0, 0, 0.895);
+
+        h3 {
+          padding-left: 10px;
+          color: rgb(50, 24, 4);
+        }
+
+        h3:hover {
+          text-decoration: underline;
+        }
+
+        p {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      .sec11:hover {
+        border: 2px solid rgba(248, 248, 248, 0.396);
+      }
+
+      #sec2 {
+        width: 500px;
+        height: 100%;
+        border: 2px solid rgb(209, 39, 130);
+
+        border-bottom-right-radius: 50px;
+
+        margin-left: 2px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        font-family: sans-serif;
+      }
+
+      .sec22 {
+        height: 160px;
+        width: 450px;
+        border: 2px solid rgb(248, 248, 248);
+
+        border-radius: 10px;
+        background-color: rgb(248, 248, 248);
+
+        h3 {
+          padding-left: 10px;
+          color: rgb(50, 24, 4);
+        }
+
+        h3:hover {
+          text-decoration: underline;
+        }
+
+        p {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      .sec22:hover {
+        border: 2px solid rgb(238, 235, 235);
+      }
+
+      /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+      .lastfoot {
+        width: 100%;
+        height: 120px;
+        /* border-top: 1px solid white; */
+        border-top: 5px solid;
+        /* thickness */
+        border-image: linear-gradient(to right, pink, blue, purple) 1;
+        background: rgba(0, 0, 0, 0.701);
+        color: white;
+        text-align: center;
+        clear: both;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: sans-serif;
+
+        ul {
+          list-style-type: none;
+        }
+
+        h3 {
+          color: rgba(31, 62, 218, 0.897);
+          background: linear-gradient(70deg, #234c97, #ff00a2);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: "Merienda", cursive;
+        }
+      }
+
+      .lfoot {
+        height: 100px;
+        width: 250px;
+        /* border: 2px solid blueviolet; */
+        margin-left: 30px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+
+        img {
+          height: 50px;
+          width: 50px;
+          padding-top: 35px;
+        }
+
+        img:hover {
+          transform: scale(1.1);
+          /* these property is used for zoom in and out function scale 0-1 desfine inside outside zoom */
+        }
+
+        p:hover {
+          border: 1px solid rgba(52, 37, 181, 0.486);
+        }
+
+        h4:hover {
+          border: 1px solid rgba(52, 37, 181, 0.486);
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        a:hover {
+          border: 1px solid rgba(52, 37, 181, 0.486);
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="Navbar">
+        <img src="/Assets/logo.png" alt="logo of Web Page" />
+
+        <h1>SAFENET SECURITY</h1>
+        <h6>Securing Data, Empowering Business.</h6>
+      </div>
+    </nav>
+
+    <nav id="mininav">
+      <div id="mini-nav">
+        <a href="/Landing.html">Home</a>
+        <a href="/About.html">About Us</a>
+        <a href="/Services.html">Services</a>
+        <a href="/Solutions.html">Solutions</a>
+        <a href="/Contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- /* ///////////////////////////////////////////////////////////////////////////////////////////////// */ -->
+
+    <section>
+      <div id="sec">
+        <div id="sec1">
+          <div class="sec11">
+            <h3>About Us</h3>
+            <p>
+              Secure your web application web penetration testing. We identify
+              vulnerabilities, guide remediation, and ensure regulatory
+              compliance.
+            </p>
+          </div>
+          <div class="sec11">
+            <h3>Happy customer</h3>
+            <p>
+              Our satisfied customers rely on us to protect their digital assets
+              with top-notch security services
+            </p>
+          </div>
+          <div class="sec11">
+            <h3>Testimonials</h3>
+            <p>
+              Hear directly from our clients. Explore real-world success stories
+              and see how we've helped several businesses
+            </p>
+          </div>
+          <div class="sec11">
+            <h3>Partnership</h3>
+            <p>
+              Want to be Qualysec's partner network? Learn about the partnership
+              opportunities we have.
+            </p>
+          </div>
+        </div>
+        <div id="sec2">
+          <div class="sec22">
+            <h3>Careers</h3>
+            <p>
+              Join our dynamic team of cybersecurity experts. Explore current
+              job openings and find out why Qualysec is the ideal place to
+              advance your career
+            </p>
+          </div>
+          <div class="sec22">
+            <h3>Life at Company</h3>
+            <p>
+              Experience a dynamic life and grow with exciting opportunities at
+              Sefnet Sequrity.Overall the company builds trust and creats a
+              strong presence.
+            </p>
+          </div>
+          <div class="sec22">
+            <h3>Award & Recognition</h3>
+            <p>
+              Trusted and recognized for excellence. Explore our awards and
+              accolades.
+            </p>
+          </div>
+          <div class="sec22">
+            <h3>Contact Us</h3>
+            <p>
+              Ready to connect? Whether you have questions or need our services,
+              we’re here to help. Reach out to us
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <footer>
+      <div class="lastfoot">
+        <ul>
+          <li>
+            <h3>SAFENET SECURITY</h3>
+          </li>
+          <li>
+            <p>&#169; 2024-2025 . All rights reserved.</p>
+          </li>
+        </ul>
+
+        <div class="lfoot">
+          <h4>Get In Touch</h4>
+          <p>+91 9284548505</p>
+          <a href="mailto:nikhthakur21@gmail.com">nikhthakur21@gmail.com</a>
+        </div>
+        <div class="lfoot">
+          <h4>150+ Trusted Clients</h4>
+          <p>21+ Countries Served</p>
+          <p>4+ Years in Business</p>
+        </div>
+        <div class="lfoot">
+          <a href="https://www.instagram.com/nikhil_thakur_patil/?hl=en"
+            ><img src="/Assets/insta.webp" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/p/Nikhil-Thakur-Patil-100027762152719/"
+            ><img src="/Assets/fb.png" alt=""
+          /></a>
+          <a href="www.linkdin.com/in/nikhil-thakur-919528b7"
+            ><img src="/Assets/in.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
