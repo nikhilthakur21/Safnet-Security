@@ -2,634 +2,624 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- https://qualysec.com/  page used for content -->
+  <title>CSS_NIKHIL_PRG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pacifico&family=Parisienne&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Merienda:wght@300..900&family=Pacifico&family=Parisienne&family=Varela+Round&display=swap"
+    rel="stylesheet">
 
-    <title>CSS_NIKHIL_PRG</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bungee&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Pacifico&family=Parisienne&family=Varela+Round&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bungee&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Merienda:wght@300..900&family=Pacifico&family=Parisienne&family=Varela+Round&display=swap"
-        rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <style>
-        html {
-  scroll-behavior: smooth;
-}
+    body {
+      background-image: url(Assets/bg11.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-  background-image: url(/Assets/bg11.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    /* Navbar big */
+    .Navbar {
+      width: 100vw;
+      height: 100px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
 
-/* Navbar big */
-.Navbar {
-  width: 100vw;
-  height: 100px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+      img {
+        margin-top: 20px;
+        height: 60px;
+        width: auto;
+      }
 
-  img {
-    margin-top: 20px;
-    height: 60px;
-    width: auto;
-  }
+      h1 {
+        color: rgba(31, 62, 218, 0.897);
+        font-family: "Merienda", cursive;
+      }
 
-  h1 {
-    color: rgba(31, 62, 218, 0.897);
-    font-family: "Merienda", cursive;
-  }
+      h6 {
+        flex-basis: 100%;
+        margin-top: -24px;
+        margin-left: 60px;
+        background: linear-gradient(160deg, #476397, #ff00a2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: sans-serif;
+      }
+    }
 
-  h6 {
-    flex-basis: 100%;
-    margin-top: -24px;
-    margin-left: 60px;
-    background: linear-gradient(160deg, #476397, #ff00a2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: sans-serif;
-  }
-}
+    /* navbar mini */
 
-/* navbar mini */
+    #mininav {
+      width: 100vw;
+      height: 50px;
+      /* border: 1px solid black; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-#mininav {
-  width: 100vw;
-  height: 50px;
-  /* border: 1px solid black; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    #mini-nav {
+      width: 650px;
+      height: 50px;
+      border: 1px solid rgba(0, 98, 255, 0.671);
+      border-radius: 10px;
+      background-color: rgb(0, 0, 0);
+      margin-top: -80px;
+      position: fixed;
 
-#mini-nav {
-  width: 650px;
-  height: 50px;
-  border: 1px solid rgba(0, 98, 255, 0.671);
-  border-radius: 10px;
-  background-color: rgb(0, 0, 0);
-  margin-top: -80px;
-  position: fixed;
+      top: 140px;
 
-  top: 140px;
+      /* below big navbar */
+      left: 50%;
+      transform: translateX(-50%);
+      /* remove negative margin */
+      z-index: 1000;
+      /* stay above everything */
 
-  /* below big navbar */
-  left: 50%;
-  transform: translateX(-50%);
-  /* remove negative margin */
-  z-index: 1000;
-  /* stay above everything */
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: center;
 
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: sans-serif;
+        /* achor tags in mininav */
+      }
 
-  a {
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    /* achor tags in mininav */
-  }
+      a:hover {
+        background: linear-gradient(70deg, #234c97, #ff00a2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.248);
+        border-radius: 5px;
+        padding: 4px;
+      }
+    }
 
-  a:hover {
-    background: linear-gradient(70deg, #234c97, #ff00a2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.248);
-    border-radius: 5px;
-    padding: 4px;
-  }
-}
+    /* start of hro img section */
 
-/* start of hro img section */
+    #heroimg {
+      width: 100vw;
+      height: 350px;
+      /* border: 2px solid black; */
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+      margin-top: -30px;
+    }
 
-#heroimg {
-  width: 100vw;
-  height: 350px;
-  /* border: 2px solid black; */
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  margin-top: -30px;
-}
+    #heroimg1 {
+      width: 1000px;
+      height: 350px;
+      /* border: 2px solid rgb(0, 0, 0); */
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+      box-sizing: border-box;
+    }
 
-#heroimg1 {
-  width: 1000px;
-  height: 350px;
-  /* border: 2px solid rgb(0, 0, 0); */
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  box-sizing: border-box;
-}
+    #hero1 {
+      width: 70%;
+      height: 100%;
+      /* border: 2px solid rgb(255, 0, 0); */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+    }
 
-#hero1 {
-  width: 70%;
-  height: 100%;
-  /* border: 2px solid rgb(255, 0, 0); */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-}
+    #hero1-1 {
 
-#hero1-1 {
-  /* height: 100%; */
-  /* width: 45%; */
-  /* border: 2px solid rgb(255, 255, 255); */
-  border-top-left-radius: 20px;
-  box-sizing: border-box;
-  /* margin-top: 5px; */
-  margin-top: 0px;
-  /* background-color: burlywood; */
+      border-top-left-radius: 20px;
+      box-sizing: border-box;
+      /* margin-top: 5px; */
+      margin-top: 0px;
+      /* background-color: burlywood; */
 
-  background-image: url(/Assets/hero4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-size: 100% 100%; */
-}
+      background-image: url(Assets/hero4.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-size: 100% 100%; */
+    }
 
-#hero1-1:hover {
-  border: 5px solid rgba(0, 98, 255, 0.671);
-  border-top-left-radius: 20px;
-}
+    #hero1-1:hover {
+      border: 5px solid rgba(0, 98, 255, 0.671);
+      border-top-left-radius: 20px;
+    }
 
-#hero1-2 {
-  height: 100%;
-  width: 700px;
-  border: 2px solid rgb(255, 255, 255);
-  border-top-left-radius: 20px;
-  box-sizing: border-box;
-}
+    #hero1-2 {
+      height: 100%;
+      width: 700px;
+      border: 2px solid rgb(255, 255, 255);
+      border-top-left-radius: 20px;
+      box-sizing: border-box;
+    }
 
-#hero1-2:hover {
-  border: 2px solid rgba(87, 186, 191, 0.671);
-}
+    #hero1-2:hover {
+      border: 2px solid rgba(87, 186, 191, 0.671);
+    }
 
-#hero2 {
-  width: 30%;
-  height: 100%;
-  /* border: 2px solid rgb(0, 13, 255); */
-  box-sizing: border-box;
-  /* margin-left: 5px; */
-}
+    #hero2 {
+      width: 30%;
+      height: 100%;
+      /* border: 2px solid rgb(0, 13, 255); */
+      box-sizing: border-box;
+      /* margin-left: 5px; */
+    }
 
-#hero2-2 {
-  height: 50%;
-  width: 100%;
-  border: 2px solid rgb(255, 255, 255);
-  /* border-bottom-right-radius: 20px; */
-  box-sizing: border-box;
-  /* margin-top: 5px; */
-  /* background-color: #ff00a2; */
-  /* background-image: url(/Assets/hero\ 9.jpg); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-size: 100% 100%; */
-  box-sizing: border-box;
-}
+    #hero2-2 {
+      height: 50%;
+      width: 100%;
+      border: 2px solid rgb(255, 255, 255);
+      /* border-bottom-right-radius: 20px; */
+      box-sizing: border-box;
+      /* margin-top: 5px; */
+      /* background-color: #ff00a2; */
+      /* background-image: url(/Assets/hero\ 9.jpg); */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-size: 100% 100%; */
+      box-sizing: border-box;
+    }
 
-#hero2-2:hover {
-  border: 3px solid rgba(87, 186, 191, 0.671);
-}
+    #hero2-2:hover {
+      border: 3px solid rgba(87, 186, 191, 0.671);
+    }
 
-#hero2-1 {
-  height: 50%;
-  width: 100%;
-  border: 2px solid rgb(255, 255, 255);
+    #hero2-1 {
+      height: 50%;
+      width: 100%;
+      border: 2px solid rgb(255, 255, 255);
 
-  box-sizing: border-box;
-  /* background-color: aqua; */
-  margin-top: 0px;
-  background-image: url(/Assets/hero7.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-size: 100% 100%; */
-}
+      box-sizing: border-box;
+      /* background-color: aqua; */
+      margin-top: 0px;
+      background-image: url(Assets/hero7.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-size: 100% 100%; */
+    }
 
-#hero2-1:hover {
-  border: 3px solid rgba(0, 242, 255, 0.671);
-}
+    #hero2-1:hover {
+      border: 3px solid rgba(0, 242, 255, 0.671);
+    }
 
-#hero1-2 video,
-#hero2-2 video,
-#hero2-1 video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-}
+    #hero1-2 video,
+    #hero2-2 video,
+    #hero2-1 video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
+    }
 
-/* End of hro img section */
+    /* End of hro img section */
 
-#arti-foot {
-  width: 100vw;
-  height: 120px;
-  /* border: 2px solid rgb(255, 51, 0); */
-  margin-top: 5px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-}
+    #arti-foot {
+      width: 100vw;
+      height: 120px;
+      /* border: 2px solid rgb(255, 51, 0); */
+      margin-top: 5px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+    }
 
-#foot {
-  width: 993px;
-  height: 100%;
-  margin-left: 1px;
-  border: 2px solid hwb(0 100% 0%);
-  background: linear-gradient(270deg, #000000, #40775866, #000000);
-  backface-visibility: 0.9;
-  border-bottom-right-radius: 20px;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-}
+    #foot {
+      width: 993px;
+      height: 100%;
+      margin-left: 1px;
+      border: 2px solid hwb(0 100% 0%);
+      background: linear-gradient(270deg, #000000, #40775866, #000000);
+      backface-visibility: 0.9;
+      border-bottom-right-radius: 20px;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
+    }
 
-.foot1 {
-  width: 100%;
-  height: 100%;
-  border: 1px solid hwb(0 100% 0%);
-  display: flex;
+    .foot1 {
+      width: 100%;
+      height: 100%;
+      border: 1px solid hwb(0 100% 0%);
+      display: flex;
 
-  img {
-    height: 100px;
-    width: 100px;
-    padding-left: 10px;
-    padding-top: 10px;
-  }
+      img {
+        height: 100px;
+        width: 100px;
+        padding-left: 10px;
+        padding-top: 10px;
+      }
 
-  img:hover {
-    transform: scale(1.1);
-    /* these property is used for zoom in and out function scale 0-1 desfine inside outside zoom */
-  }
+      img:hover {
+        transform: scale(1.1);
+        /* these property is used for zoom in and out function scale 0-1 desfine inside outside zoom */
+      }
 
-  p {
-    color: white;
-    text-align: justify;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-    padding-top: 0px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-}
+      p {
+        color: white;
+        text-align: justify;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-top: 0px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    }
 
-#foot3 {
-  border-bottom-right-radius: 20px;
-}
+    #foot3 {
+      border-bottom-right-radius: 20px;
+    }
 
-#info {
-  width: 100vw;
-  height: 420px;
-  /* border: 2px solid rgb(255, 255, 255); */
-  margin-top: 5px;
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  box-sizing: border-box;
-}
+    #info {
+      width: 100vw;
+      height: 420px;
+      /* border: 2px solid rgb(255, 255, 255); */
+      margin-top: 5px;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      box-sizing: border-box;
+    }
 
-#info1 {
-  width: 1000px;
-  height: 401px;
-  /* border: 2px solid rgb(255, 255, 255); */
-  display: flex;
-  flex-flow: row wrap;
-  box-sizing: border-box;
-  /* margin-left: 2px; */
-}
+    #info1 {
+      width: 1000px;
+      height: 401px;
+      /* border: 2px solid rgb(255, 255, 255); */
+      display: flex;
+      flex-flow: row wrap;
+      box-sizing: border-box;
+      /* margin-left: 2px; */
+    }
 
-.i-info {
-  width: 492px;
-  height: 200px;
-  border: 1px solid darkorange;
-  border-radius: 20px;
-  margin: 2px;
-  /* background-color: rgb(225, 235, 252); */
-  background-color: white;
-  /* Soft light blue strip */
-  display: flex;
-  flex-flow: row;
-  margin-top: 0px;
-  padding-top: 0px;
-  align-items: center;
+    .i-info {
+      width: 492px;
+      height: 200px;
+      border: 1px solid darkorange;
+      border-radius: 20px;
+      margin: 2px;
+      /* background-color: rgb(225, 235, 252); */
+      background-color: white;
+      /* Soft light blue strip */
+      display: flex;
+      flex-flow: row;
+      margin-top: 0px;
+      padding-top: 0px;
+      align-items: center;
 
-  img {
-    height: 120px;
-    width: 120px;
-    margin-top: 25px;
-    margin-left: 25px;
-    border: 2px solid darkorange;
-    border-radius: 70px;
-  }
+      img {
+        height: 120px;
+        width: 120px;
+        margin-top: 25px;
+        margin-left: 25px;
+        border: 2px solid darkorange;
+        border-radius: 70px;
+      }
 
-  h2 {
-    padding: 15px;
-    padding-top: 55px;
-    text-decoration: underline;
-    color: black;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
+      h2 {
+        padding: 15px;
+        padding-top: 55px;
+        text-decoration: underline;
+        color: black;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
 
-  p {
-    text-align: justify;
-    color: rgb(25, 25, 56);
-    padding-right: 10px;
-    padding-top: 25px;
-  }
-}
+      p {
+        text-align: justify;
+        color: rgb(25, 25, 56);
+        padding-right: 10px;
+        padding-top: 25px;
+      }
+    }
 
-.i-info:hover {
-  border: 2px solid rgb(0, 98, 255);
-}
+    .i-info:hover {
+      border: 2px solid rgb(0, 98, 255);
+    }
 
-#h11 {
-  color: white;
-  margin-left: 280px;
-  font-family: "Courier New", Courier, monospace;
-}
+    #h11 {
+      color: white;
+      margin-left: 280px;
+      font-family: "Courier New", Courier, monospace;
+    }
 
-/* ////////////////////////////////////////////////////////////////////////////////// */
+    /* ////////////////////////////////////////////////////////////////////////////////// */
 
-.lastfoot {
-  width: 100%;
-  height: 120px;
-  /* border-top: 1px solid white; */
-  border-top: 5px solid;
-  /* thickness */
-  border-image: linear-gradient(
-      to right,
-      rgb(160, 40, 60),
-      rgba(0, 0, 255, 0.721),
-      purple
-    )
-    1;
-  background: rgba(0, 0, 0, 0.701);
-  color: white;
-  text-align: center;
-  clear: both;
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: sans-serif;
+    .lastfoot {
+      width: 100%;
+      height: 120px;
+      /* border-top: 1px solid white; */
+      border-top: 5px solid;
+      /* thickness */
+      border-image: linear-gradient(to right,
+          rgb(160, 40, 60),
+          rgba(0, 0, 255, 0.721),
+          purple) 1;
+      background: rgba(0, 0, 0, 0.701);
+      color: white;
+      text-align: center;
+      clear: both;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: sans-serif;
 
-  ul {
-    list-style-type: none;
-  }
+      ul {
+        list-style-type: none;
+      }
 
-  h3 {
-    color: rgba(31, 62, 218, 0.897);
-    background: linear-gradient(70deg, #234c97, #ff00a2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Merienda", cursive;
-  }
-}
+      h3 {
+        color: rgba(31, 62, 218, 0.897);
+        background: linear-gradient(70deg, #234c97, #ff00a2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Merienda", cursive;
+      }
+    }
 
-.lfoot {
-  height: 100px;
-  width: 250px;
-  /* border: 2px solid blueviolet; */
-  margin-left: 30px;
-  padding-top: 0px;
-  padding-bottom: 20px;
+    .lfoot {
+      height: 100px;
+      width: 250px;
+      /* border: 2px solid blueviolet; */
+      margin-left: 30px;
+      padding-top: 0px;
+      padding-bottom: 20px;
 
-  img {
-    height: 50px;
-    width: 50px;
-    padding-top: 35px;
-  }
+      img {
+        height: 50px;
+        width: 50px;
+        padding-top: 35px;
+      }
 
-  img:hover {
-    transform: scale(1.1);
-    /* these property is used for zoom in and out function scale 0-1 desfine inside outside zoom */
-  }
+      img:hover {
+        transform: scale(1.1);
+        /* these property is used for zoom in and out function scale 0-1 desfine inside outside zoom */
+      }
 
-  p:hover {
-    border: 1px solid rgba(52, 37, 181, 0.486);
-  }
+      p:hover {
+        border: 1px solid rgba(52, 37, 181, 0.486);
+      }
 
-  h4:hover {
-    border: 1px solid rgba(52, 37, 181, 0.486);
-  }
+      h4:hover {
+        border: 1px solid rgba(52, 37, 181, 0.486);
+      }
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
+      a {
+        text-decoration: none;
+        color: white;
+      }
 
-  a:hover {
-    border: 1px solid rgba(52, 37, 181, 0.486);
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-    </style>
+      a:hover {
+        border: 1px solid rgba(52, 37, 181, 0.486);
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
 
 </head>
 
 <body>
 
-    <nav>
-        <div class="Navbar">
-            <img src="/Assets/logo.png" alt="logo of Web Page">
+  <nav>
+    <div class="Navbar">
+      <img src="Assets/logo.png" alt="logo of Web Page">
 
-            <h1>SAFENET SECURITY</h1>
-            <h6>Securing Data, Empowering Business.</h6>
-        </div>
+      <h1>SAFENET SECURITY</h1>
+      <h6>Securing Data, Empowering Business.</h6>
+    </div>
 
-    </nav>
+  </nav>
 
-    <nav id="mininav">
-        <div id="mini-nav">
-            <a href="/Landing.html">Home</a>
-            <a href=" /About.html">About Us</a>
-            <a href="/Services.html">Services</a>
-            <a href="/Solutions.html">Solutions</a>
-            <a href="/Contact.html">Contact</a>
-        </div>
-    </nav>
+  <nav id="mininav">
+    <div id="mini-nav">
+      <a href="index.html">Home</a>
+      <a href="About.html">About Us</a>
+      <a href="Services.html">Services</a>
+      <a href="Solutions.html">Solutions</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+  </nav>
 
-    <!-- ///////////////////////////////////////////////////////////////////// -->
-
-
-    <article>
-        <div id="heroimg">
-
-            <div id="heroimg1">
-
-                <div id="hero1">
-
-                    <div id="hero1-1">
-                    </div>
-
-                    <div id="hero1-2">
-                        <video autoplay muted loop playsinline id="myVideo">
-                            <source src="/Assets/v (1).mp4" type="video/mp4">
-                        </video>
+  <!-- ///////////////////////////////////////////////////////////////////// -->
 
 
-                    </div>
+  <article>
+    <div id="heroimg">
+
+      <div id="heroimg1">
+
+        <div id="hero1">
+
+          <div id="hero1-1">
+          </div>
+
+          <div id="hero1-2">
+            <video autoplay muted loop playsinline id="myVideo">
+              <source src="Assets/v (1).mp4" type="video/mp4">
+            </video>
 
 
-                </div>
-
-                <div id="hero2">
-
-                    <div id="hero2-1">
-
-                    </div>
-
-                    <div id="hero2-2">
-                        <video autoplay muted loop playsinline id="myVideo">
-                            <source src="/Assets/Cyber Security - Video Animation Services (3).mp4" type="video/mp4">
-                        </video>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </article>
-
-    <!--  //////////////////////////////////////// -->
-
-    <article>
-        <div id="arti-foot">
-
-            <div id="foot">
-                <div class="foot1" id="foot1"><img src="/Assets/art1.jpg" alt="">
-                    <p>We go beyond tool scans, thoroughly examining your functionalities and technologies to uncover
-                        vulnerabilities.</p>
-                </div>
-                <div class="foot1" id="foot2"><img src="/Assets/art2.jpg" alt="">
-                    <p>
-                    <p>We simulate a hacker-style approach to identify vulnerabilities to give you a clear picture of
-                        your defenses.</p>
-                    </p>
-                </div>
-                <div class="foot1" id="foot3"><img src="/Assets/art3.jpg" alt="">
-                    <p>Our top-notch pentesting speaks for itself. We’ve secured over 450 assets in 18+ countries with
-                        zero data breaches. </p>
-                </div>
-            </div>
-        </div>
-    </article>
-
-    <!-- ////////////////////////////////////////////// -->
-
-    <h2 id="h11">Comprehensive Penetration Testing Services</h2>
-
-    <!-- ////////////////////////////////////////////// -->
-
-    <article>
-        <div id="info">
-
-            <div id="info1">
-
-                <div class="i-info"><img src="/Assets/con1.png" alt="">
-                    <h2>Mobile App Pentesting</h2>
-                    <p>Enhance your mobile app's security posture by thoroughly testing for vulnerabilities.</p>
-                </div>
-
-
-                <div class="i-info"><img src="/Assets/con2.png" alt="">
-                    <h2>Web App Pentesting</h2>
-                    <p>Identify weak spots and vulnerable routes in your web application</p>
-                </div>
-
-                <div class="i-info"><img src="/Assets/con3.png" alt="">
-                    <h2>API Pentesting</h2>
-                    <p>Discover_security vulnerabilities that attackers could exploit in an API.</p>
-                </div>
-
-                <div class="i-info"><img src="/Assets/con4.png" alt="">
-                    <h2>Cloud Pentesting</h2>
-                    <p>Perform security assessment of your cloud infrastructure from expert pentesters.</p>
-                </div>
-
-            </div>
-
-        </div>
-    </article>
-
-    <footer>
-
-        <div class="lastfoot">
-
-            <ul>
-                <li>
-                    <h3>SAFENET SECURITY</h3>
-                </li>
-                <li>
-                    <p> &#169; 2024-2025 . All rights reserved.</p>
-                </li>
-            </ul>
-
-
-            <div class="lfoot">
-
-                <h4>Get In Touch</h4>
-                <p>+91 9284548505</p>
-                <a href="mailto:nikhthakur21@gmail.com">nikhthakur21@gmail.com</a>
-
-
-            </div>
-            <div class="lfoot">
-                <h4>150+ Trusted Clients</h4>
-                <p>21+ Countries Served</p>
-                <p>4+ Years in Business</p>
-            </div>
-            <div class="lfoot">
-                <a href="https://www.instagram.com/nikhil_thakur_patil/?hl=en"><img src="/Assets/insta.webp" alt=""></a>
-                <a href="https://www.facebook.com/p/Nikhil-Thakur-Patil-100027762152719/"><img src="/Assets/fb.png"
-                        alt=""></a>
-                <a href="www.linkdin.com/in/nikhil-thakur-919528b7"><img src="/Assets/in.png" alt=""></a>
-            </div>
+          </div>
 
 
         </div>
 
-    </footer>
+        <div id="hero2">
+
+          <div id="hero2-1">
+
+          </div>
+
+          <div id="hero2-2">
+            <video autoplay muted loop playsinline id="myVideo">
+              <source src="Assets/Cyber Security - Video Animation Services (3).mp4" type="video/mp4">
+            </video>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+
+  <!--  //////////////////////////////////////// -->
+
+  <article>
+    <div id="arti-foot">
+
+      <div id="foot">
+        <div class="foot1" id="foot1"><img src="Assets/art1.jpg" alt="">
+          <p>We go beyond tool scans, thoroughly examining your functionalities and technologies to uncover
+            vulnerabilities.</p>
+        </div>
+        <div class="foot1" id="foot2"><img src="Assets/art2.jpg" alt="">
+          <p>
+          <p>We simulate a hacker-style approach to identify vulnerabilities to give you a clear picture of
+            your defenses.</p>
+          </p>
+        </div>
+        <div class="foot1" id="foot3"><img src="Assets/art3.jpg" alt="">
+          <p>Our top-notch pentesting speaks for itself. We’ve secured over 450 assets in 18+ countries with
+            zero data breaches. </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ////////////////////////////////////////////// -->
+
+  <h2 id="h11">Comprehensive Penetration Testing Services</h2>
+
+  <!-- ////////////////////////////////////////////// -->
+
+  <article>
+    <div id="info">
+
+      <div id="info1">
+
+        <div class="i-info"><img src="Assets/con1.png" alt="">
+          <h2>Mobile App Pentesting</h2>
+          <p>Enhance your mobile app's security posture by thoroughly testing for vulnerabilities.</p>
+        </div>
+
+
+        <div class="i-info"><img src="Assets/con2.png" alt="">
+          <h2>Web App Pentesting</h2>
+          <p>Identify weak spots and vulnerable routes in your web application</p>
+        </div>
+
+        <div class="i-info"><img src="Assets/con3.png" alt="">
+          <h2>API Pentesting</h2>
+          <p>Discover_security vulnerabilities that attackers could exploit in an API.</p>
+        </div>
+
+        <div class="i-info"><img src="Assets/con4.png" alt="">
+          <h2>Cloud Pentesting</h2>
+          <p>Perform security assessment of your cloud infrastructure from expert pentesters.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </article>
+
+  <footer>
+
+    <div class="lastfoot">
+
+      <ul>
+        <li>
+          <h3>SAFENET SECURITY</h3>
+        </li>
+        <li>
+          <p> &#169; 2024-2025 . All rights reserved.</p>
+        </li>
+      </ul>
+
+
+      <div class="lfoot">
+
+        <h4>Get In Touch</h4>
+        <p>+91 9284548505</p>
+        <a href="mailto:nikhthakur21@gmail.com">nikhthakur21@gmail.com</a>
+
+
+      </div>
+      <div class="lfoot">
+        <h4>150+ Trusted Clients</h4>
+        <p>21+ Countries Served</p>
+        <p>4+ Years in Business</p>
+      </div>
+      <div class="lfoot">
+        <a href="https://www.instagram.com/nikhil_thakur_patil/?hl=en"><img src="Assets/insta.webp" alt=""></a>
+        <a href="https://www.facebook.com/p/Nikhil-Thakur-Patil-100027762152719/"><img src="Assets/fb.png" alt=""></a>
+        <a href="www.linkdin.com/in/nikhil-thakur-919528b7"><img src="Assets/in.png" alt=""></a>
+      </div>
+
+
+    </div>
+
+  </footer>
 
 </body>
-
 
 </html>
